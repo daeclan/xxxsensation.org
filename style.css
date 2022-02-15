@@ -1,0 +1,32 @@
+
+html, body {
+  background: #000000;
+  height: 100%;
+  width: 100%;
+}
+ 
+.maindiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+ 
+.text {
+  padding: 10px;
+  background: url("https://i.postimg.cc/QCCpNwHK/senTOten.gif");
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  color: #00000047;
+  text-transform: uppercase;
+  font-size: 20rem;
+  font-weight: 900;
+ font-family: 'Josefin Sans';
+  letter-spacing: 1px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+}
