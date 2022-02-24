@@ -49,7 +49,17 @@ html, body {
   background: #fff ;
   border-radius: 5px;
   width: calc(50% - 40px);
-  /* padding: 0 20px; */
+  padding: 20px;
+  position: relative;
+}
+
+.wrapper .row section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: red;
+  top: 28px;
 }
 
 .row section .details,
@@ -66,6 +76,17 @@ html, body {
 
 .row section p{
   margin: 10px 0 17px 0;
+}
+
+.row section .bottom a{
+  text-decoration: none;
+  background: #ff9778;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 400;
+
 }
  
 .maindiv {
