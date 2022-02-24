@@ -8,6 +8,17 @@ html, body {
 .wrapper{
   background: red;
   max-width: 180px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.wrapper .row{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wrapper .row section{
+  background: red ;
 }
  
 .maindiv {
