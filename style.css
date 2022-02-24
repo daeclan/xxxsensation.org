@@ -6,10 +6,18 @@ html, body {
 }
 
 .wrapper{
-  background: red;
-  max-width: 180px;
+  max-width: 1080px;
   margin: 50px auto;
   padding: 0 20px;
+}
+
+.wrapper .center-line{
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .wrapper .row{
@@ -17,8 +25,47 @@ html, body {
   justify-content: flex-start;
 }
 
+.wrapper .row-1{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wrapper .row-2{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wrapper .row-3{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wrapper .row-4{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .wrapper .row section{
-  background: red ;
+  background: #fff ;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  /* padding: 0 20px; */
+}
+
+.row section .details,
+.row section .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.row section .details .title{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.row section p{
+  margin: 10px 0 17px 0;
 }
  
 .maindiv {
