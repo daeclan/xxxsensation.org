@@ -73,6 +73,26 @@ body {
   left: -7px;
 }
 
+.row section .icon{
+position: absolute;
+background: #ff9778;
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #fff;
+top: 13px;
+}
+
+.row-1 section .icon{
+right: -60px
+}
+
+.row-2 section .icon{
+left: -60px
+}
+
 .row section .details,
 .row section .bottom{
   display: flex;
