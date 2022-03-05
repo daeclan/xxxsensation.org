@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src='index.js'></script>
+<!--     <script src='index.js?'></script> -->
+	
+
   </head>
   <body>
     <div class="container" id="blur">
@@ -80,15 +82,8 @@
             </div>
             <br />  
             <div class="bottom">
-              <a href="#!" onclick="toggle()">Read More</a>
-              <script type="text/javascript">
-                function toggle(){
-                  var blur = document.getElementById('blur')
-                  blur.classList.toggle('active')
-                  var popup = document.getElementById('popup')
-                  popup.classList.toggle('active')
-                }
-              </script>
+              <a href="#!" onclick="toggle('Kiss On Me', 'kiss-on-me' )">Read More</a>
+             
               <span class="date">February 17, 2017</span>
             </div>
           </section> 
@@ -1066,20 +1061,48 @@
         </div>
       </div>
     </div> 
-    <div id="popup">
+    <div id="popup" >
       <div class="container2">
-        <div class="title2">
-          Kiss On Me!
-        </div>
+        <div class="title2"></div>
         <div class="compare">
           <div class="before">
             <div class="after">
             </div>
           </div>
-          <input type="range" min="0" max="640" step="10" id="compare-ip">
+          <input type="range" min="0" max="100" step="1" id="compare-ip">
         </div>
       </div>
-      <a href="#!" onclick="toggle()">Close</a>
+      <a href="#!" class="close-popup" onclick="close_popup()">Close</a>
     </div>
+	
+		<script>
+			$('#compare-ip').on('change input', function(e){
+				var factor = ( 100 / e.target.value );
+				$('.after').width( $('.compare').width() / factor );
+			})
+			
+			$(window).on('resize', function(){
+				$('.after').css('background-size', $('.compare').width());
+
+				var factor = ( 100 / $('#compare-ip').val() );
+				$('.after').width( $('.compare').width() / factor );
+			})
+
+			function toggle( title, song_name ){
+			  if( title ) {
+				  $('.title2').text(title);
+			  }
+			  if( song_name ) {
+				  $('#popup').attr('data-song', song_name);
+			  }
+			  $('#popup,#blur').addClass('active');
+			  $('.after').css('background-size', $('.compare').width());
+			  return false;
+			}
+			function close_popup() {
+				$('#popup,#blur').removeClass('active');
+				return false;
+			}
+	  </script>
   </body>
 </html>
