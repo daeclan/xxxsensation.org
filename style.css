@@ -36,11 +36,23 @@ body{
 }
 .container#blur.active{
   filter: blur(20px);
-  /* pointer-events: none;
-  user-select: none; */
+  pointer-events: none;
+  user-select: none;
 }
 .container .content{
  position: relative;
+}
+#topboy{
+  /* text-align: center;
+  position: relative;
+  max-width: 800px;
+  display: block;
+  border: 3px solid green; */
+}
+h2{
+  font-weight: 600px;
+  margin-bottom: 10px;
+  color: 333;
 }
 #popup{
   position: fixed;
@@ -48,6 +60,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   width: calc(90% - 40px);
+  height: calc(90% - 40px);
   padding: 50px;
   box-shadow: 0 5px 30px rgba(0,0,0,.30);
   background: #fff;
