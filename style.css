@@ -258,6 +258,12 @@ h2{
 [data-song="forever"] .compare .after {
 	background-image: url("https://i.ibb.co/zs3kQZN/I-don-t-wanna-do-this-anymore-FINAL.jpg");
 }
+[data-song="plenty"] .compare .before {
+	background-image: url("https://i.ibb.co/qWLsrqv/IGOTPLENTYOFTIME-FINAL.jpg");
+}
+[data-song="plenty"] .compare .after {
+	background-image: url("https://i.ibb.co/ZHnrP8K/IGOTPLENTYDICK-FINAL.jpg");
+}
 
 .close-popup {
 	top: -20px;
