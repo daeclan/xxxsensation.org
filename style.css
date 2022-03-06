@@ -235,10 +235,28 @@ h2{
 }
 
 [data-song="kiss-on-me"] .compare .before {
-	background-image: url("https://i.ibb.co/TRCS44y/Kiss-On-Me-Lyrics.jpg");
+	background-image: url("https://i.ibb.co/MgcrGG3/Kiss-On-Me-Lyrics-FINAL.jpg");
 }
 [data-song="kiss-on-me"] .compare .after {
-	background-image: url("https://i.ibb.co/PNmPpLP/Look-At-Me-Lyrics.jpg");
+	background-image: url("https://i.ibb.co/dMKbqF8/Look-At-Me-Lyrics-FINAL.jpg");
+}
+[data-song="ridin-bikes"] .compare .before {
+	background-image: url("https://i.ibb.co/Mc745sJ/Im-Ridin-Bikes-FINAL.jpg");
+}
+[data-song="ridin-bikes"] .compare .after {
+	background-image: url("https://i.ibb.co/tcXRgV8/Im-Sippin-Tea-FINAL.jpg");
+}
+[data-song="yung-catz"] .compare .before {
+	background-image: url("https://i.ibb.co/dPS2kLc/Yu-Ng-Ca-Tz-FINAL.jpg");
+}
+[data-song="yung-catz"] .compare .after {
+	background-image: url("https://i.ibb.co/5vqgmW5/Yu-Ng-Br-Atz-FINAL.jpg");
+}
+[data-song="forever"] .compare .before {
+	background-image: url("https://i.ibb.co/NWgqBQf/I-wanna-do-this-forever.jpg");
+}
+[data-song="forever"] .compare .after {
+	background-image: url("https://i.ibb.co/zs3kQZN/I-don-t-wanna-do-this-anymore-FINAL.jpg");
 }
 
 .close-popup {
