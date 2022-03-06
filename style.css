@@ -264,6 +264,18 @@ h2{
 [data-song="plenty"] .compare .after {
 	background-image: url("https://i.ibb.co/ZHnrP8K/IGOTPLENTYDICK-FINAL.jpg");
 }
+[data-song="motif"] .compare .before {
+	background-image: url("https://i.ibb.co/zJMGGGY/MOTIF-FINAL.jpg");
+}
+[data-song="motif"] .compare .after {
+	background-image: url("https://i.ibb.co/cr4GJvk/TEETH.jpg");
+}
+[data-song="basedgod"] .compare .before {
+	background-image: url("https://i.ibb.co/7JGVwXp/LILBLILBOAT-FINALpsd.jpg");
+}
+[data-song="basedgod"] .compare .after {
+	background-image: url("https://i.ibb.co/BLVSgG4/RIPROACH-FINAL.jpg");
+}
 
 .close-popup {
 	top: -20px;
