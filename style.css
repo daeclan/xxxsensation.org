@@ -276,6 +276,12 @@ h2{
 [data-song="basedgod"] .compare .after {
 	background-image: url("https://i.ibb.co/BLVSgG4/RIPROACH-FINAL.jpg");
 }
+[data-song="khaki"] .compare .before {
+	background-image: url("https://i.ibb.co/JsYRRcZ/KHAKI-FINAL-fixed-M.jpg");
+}
+[data-song="khaki"] .compare .after {
+	background-image: url("https://i.ibb.co/s54x3bv/MAXI-FINAL.jpg");
+}
 
 .close-popup {
 	top: -20px;
