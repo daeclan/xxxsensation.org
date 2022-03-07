@@ -282,6 +282,12 @@ h2{
 [data-song="khaki"] .compare .after {
 	background-image: url("https://i.ibb.co/s54x3bv/MAXI-FINAL.jpg");
 }
+[data-song="snow"] .compare .before {
+	background-image: url("https://i.ibb.co/HzWFTkM/GLOW-FINAL.jpg");
+}
+[data-song="snow"] .compare .after {
+	background-image: url("https://i.ibb.co/sJTPqbD/SNOW-FINAL-fr.jpg");
+}
 
 .close-popup {
 	top: -20px;
