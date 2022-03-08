@@ -288,6 +288,24 @@ h2{
 [data-song="snow"] .compare .after {
 	background-image: url("https://i.ibb.co/sJTPqbD/SNOW-FINAL-fr.jpg");
 }
+[data-song="cook"] .compare .before {
+	background-image: url("https://i.ibb.co/ncfJ39y/COOKING-FINAL.jpg");
+}
+[data-song="cook"] .compare .after {
+	background-image: url("https://i.ibb.co/HDr03zz/LOOKING-FINAL.jpg");
+}
+[data-song="king"] .compare .before {
+	background-image: url("https://i.ibb.co/TLRt5B2/QUEEN.jpg");
+}
+[data-song="king"] .compare .after {
+	background-image: url("https://i.ibb.co/PGnJ9mY/KING.jpg");
+}
+[data-song="freshman"] .compare .before {
+	background-image: url("https://i.ibb.co/HHWdbNb/FRESHMAN-XXXS-FINAL.jpg");
+}
+[data-song="freshman"] .compare .after {
+	background-image: url("https://i.ibb.co/1JdC253/FRESHMAN-XXXT-FINAL.jpg");
+}
 
 .close-popup {
 	top: -20px;
