@@ -306,6 +306,12 @@ h2{
 [data-song="freshman"] .compare .after {
 	background-image: url("https://i.ibb.co/1JdC253/FRESHMAN-XXXT-FINAL.jpg");
 }
+[data-song="slipknot"] .compare .before {
+	background-image: url("https://i.ibb.co/mF8rpZX/GIVE-LOTS-FINAL.jpg");
+}
+[data-song="slipknot"] .compare .after {
+	background-image: url("https://i.ibb.co/DY0h3wW/SLIPKNOT-FINAL.jpg");
+}
 
 .close-popup {
 	top: -20px;
