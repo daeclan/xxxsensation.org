@@ -312,6 +312,18 @@ h2{
 [data-song="slipknot"] .compare .after {
 	background-image: url("https://i.ibb.co/DY0h3wW/SLIPKNOT-FINAL.jpg");
 }
+[data-song="untitled"] .compare .before {
+	background-image: url("https://i.ibb.co/gZr2pDL/Untitled-JF.jpg");
+}
+[data-song="untitled"] .compare .after {
+	background-image: url("https://i.ibb.co/4mz5xmW/Jocelyn-Flores.jpg");
+}
+[data-song="oppression"] .compare .before {
+	background-image: url("https://i.ibb.co/wd9q4V3/OPPRESSION-FINAL.jpg");
+}
+[data-song="oppression"] .compare .after {
+	background-image: url("https://i.ibb.co/y0JKJY9/DEPRESSION-FINAL.jpg");
+}
 
 .close-popup {
 	top: -20px;
