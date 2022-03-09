@@ -324,6 +324,12 @@ h2{
 [data-song="oppression"] .compare .after {
 	background-image: url("https://i.ibb.co/y0JKJY9/DEPRESSION-FINAL.jpg");
 }
+[data-song="heroic"] .compare .before {
+	background-image: url("https://i.ibb.co/8XFYZf2/HERO-DREAM.jpg");
+}
+[data-song="heroic"] .compare .after {
+	background-image: url("https://i.ibb.co/qjjQJTq/NIGHTMARE-DEATH.jpg");
+}
 
 .close-popup {
 	top: -20px;
