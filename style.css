@@ -330,6 +330,12 @@ h2{
 [data-song="heroic"] .compare .after {
 	background-image: url("https://i.ibb.co/qjjQJTq/NIGHTMARE-DEATH.jpg");
 }
+[data-song="sushi"] .compare .before {
+	background-image: url("https://i.ibb.co/z4FrDBT/PROUDCAT-FINAL.jpg");
+}
+[data-song="sushi"] .compare .after {
+	background-image: url("https://i.ibb.co/0GZmF3r/IEATPUSSY-FINAL.jpg");
+}
 
 .close-popup {
 	top: -20px;
