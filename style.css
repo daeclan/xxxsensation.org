@@ -288,6 +288,12 @@ h2{
 [data-song="snow"] .compare .after {
 	background-image: url("https://i.ibb.co/sJTPqbD/SNOW-FINAL-fr.jpg");
 }
+[data-song="revenge"] .compare .before {
+	background-image: url("https://i.ibb.co/nshHbLP/BEFRIEND-FINAL.jpg");
+}
+[data-song="revenge"] .compare .after {
+	background-image: url("https://i.ibb.co/5YQB4hP/REVENGE.jpg");
+}
 [data-song="cook"] .compare .before {
 	background-image: url("https://i.ibb.co/ncfJ39y/COOKING-FINAL.jpg");
 }
@@ -341,6 +347,12 @@ h2{
 }
 [data-song="sadrad"] .compare .after {
 	background-image: url("https://i.ibb.co/xFrVSvb/SAD-FINAL.jpg");
+}
+[data-song="sunmoon"] .compare .before {
+	background-image: url("https://i.ibb.co/8YVQSMx/SUN-FINAL.jpg");
+}
+[data-song="sunmoon"] .compare .after {
+	background-image: url("https://i.ibb.co/y5SNCzX/MOON-FINAL.jpg");
 }
 
 .close-popup {
