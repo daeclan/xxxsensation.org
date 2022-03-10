@@ -336,6 +336,12 @@ h2{
 [data-song="sushi"] .compare .after {
 	background-image: url("https://i.ibb.co/0GZmF3r/IEATPUSSY-FINAL.jpg");
 }
+[data-song="sadrad"] .compare .before {
+	background-image: url("https://i.ibb.co/vmjqP0C/RAD-FINAL.jpg");
+}
+[data-song="sadrad"] .compare .after {
+	background-image: url("https://i.ibb.co/xFrVSvb/SAD-FINAL.jpg");
+}
 
 .close-popup {
 	top: -20px;
