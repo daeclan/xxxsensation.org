@@ -9,16 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<!--     <script src='index.js?'></script> -->
 	
 
   </head>
   <body>
-    <div class="container" id="blur">
-      <div class="topboy" style="text-align: center; margin-left: auto; margin-right: auto">
+    <div class="container" id="blur" style="text-align: center">
+      <br />
+      <img src="">
+      </img>
+      <div class="topboy" style="display:table-cell; background:yellow; display:inline-block; margin-left: auto; margin-right: auto; width: 70%;">
         <h1 style="font-size: 40px;">
-          WHAT THE HECK IS A XXXSENSATION
+          WHAT THE HECK IS A XXXSENSATION?
         </h1>
+        <br />
         <br />
           <div style="display: block; margin-left: auto; margin-right: auto; width: 70%;">
             <p>
@@ -26,7 +29,7 @@
             </p>
             <br />
             <p>
-              From February 17, 2017 until late March 2018, XXXSENSATION created an antithetical response to the BAD VIBES FOREVER mentality that Soundcloud rapper XXXTENTACION brought into the game, releasing over 25+ parodies calling out the darkness and hypocrisy in XXXTENTACION’s music and fanbase—most notably the misogyny and violence, and negativity—and replacing them with songs about Women’s Rights, Peaceful Volunteering, and Positivity.
+              From February 17, 2017 until March 2018, XXXSENSATION created an antithetical response to the BAD VIBES FOREVER mentality that Soundcloud rapper XXXTENTACION brought into the game, releasing over 25+ parodies calling out the darkness and hypocrisy in XXXTENTACION’s music and fanbase—most notably the misogyny and violence, and negativity—and replacing them with songs about Women’s Rights, Peaceful Volunteering, and Positivity.
             </p>
             <br />
             <p>
@@ -36,6 +39,7 @@
             <p>
               This project was crafted with this framework in mind; XXXTENTACION was clearly playing the “bad boy” role and was tangled up with all manner of accusations (from domestic and sexual violence HYPERLINKS) to XXX.
             </p>
+            <br />
         </div>
       </div>
       <div class="wrapper">
@@ -1073,20 +1077,16 @@
       </div>
       <a href="#!" class="close-popup" onclick="close_popup()">Close</a>
     </div>
-	
 		<script>
 			$('#compare-ip').on('change input', function(e){
 				var factor = ( 100 / e.target.value );
 				$('.after').width( $('.compare').width() / factor );
 			})
-			
 			$(window).on('resize', function(){
 				$('.after').css('background-size', $('.compare').width());
-
 				var factor = ( 100 / $('#compare-ip').val() );
 				$('.after').width( $('.compare').width() / factor );
 			})
-
 			function toggle( title, song_name ){
 			  if( title ) {
 				  $('.title2').text(title);
