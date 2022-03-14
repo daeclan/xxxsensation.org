@@ -39,12 +39,23 @@
         </h1> -->
         <!-- <br /> -->
           <div style="display: block; margin-left: auto; margin-right: auto; width: 70%;">
-            <p>
+            <!-- <p>
               It’s finally here: a website that takes you through the complicated career of a lovable and very popular genius, XXXSENSATION.
 
               This website explores how Chicago twenty-something Declan Murphy became Soundcloud parody rapper XXXSENSATION, one of the most revered satirists on the planet. Through frank commentary from the artist himself and unseen connections to his arch-nemesis, XXXTENTACTION, this website offers a critical comparison of  parodies with the violent, raw source material he rode against. In this essay, I will demonstrate that before XXXTENTACION’s passing, he was engaged in a pointed troll campaign to end XXXSENSATION and rehabilitate his image by copying parallel initiatives by me, started months prior his pivot towards positivity.
 
               World premiere right here, right now. Click Read More to like, read more.
+            </p> -->
+            <p>
+              FACT: 1
+            </p>
+            <br />
+            <p>
+              FACT: 2
+            </p>
+            <br />
+            <p>
+              FACT: 3
             </p>
             <br />
             <!-- <p>
@@ -1163,8 +1174,9 @@
             <div class="after">
             </div>
           </div>
-          <div class="soundcloud">
+          <div>
             <iframe
+            name="soundcloud"
             width="100%" 
             height="166" 
             scrolling="no" 
@@ -1199,16 +1211,16 @@
 				var factor = ( 100 / $('#compare-ip').val() );
 				$('.after').width( $('.compare').width() / factor );
 			})
-      console.log("hey")
 			function toggle( title, song_name, url ){
         if( title ) {
           $('.title2').text(title);
+          console.log(url)
         }
         if( song_name ) {
           $('#popup').attr('data-song', song_name);
         }
         if( url ) {
-          $('.soundcloud').attr('src', url);
+          $('#soundcloud').attr('src', url);
           console.log("hey")
           console.log(url)
         };
