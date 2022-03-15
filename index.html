@@ -34,11 +34,11 @@
       <br />
       <div class="topboy" style="display:table-cell; background:yellow; display:inline-block; margin-left: auto; margin-right: auto; width: 70%;">
         <br />
-        <!-- <h1 style="font-size: 7vw;">
-          WHAT THE HECK IS A XXXSENSATION?
-        </h1> -->
+        <h1 style="font-size: 7vw;">
+          BIG FACTS:
+        </h1>
         <!-- <br /> -->
-          <div style="display: block; margin-left: auto; margin-right: auto; width: 70%;">
+          <div style="display: block; margin-left: auto; margin-right: auto; box-sizing: border-box; width: 50%;">
             <!-- <p>
               It’s finally here: a website that takes you through the complicated career of a lovable and very popular genius, XXXSENSATION.
 
@@ -47,15 +47,25 @@
               World premiere right here, right now. Click Read More to like, read more.
             </p> -->
             <p>
-              FACT: 1
+              <span style="font-size: 5vw; float: left;">FACT 1:</span>
+              <br />
+              <span style="font-size: 1vw;">XXXTENTACION came into the game with negative energy.</span>
             </p>
             <br />
-            <p>
-              FACT: 2
-            </p>
+            <br />
             <br />
             <p>
-              FACT: 3
+              <span style="font-size: 5vw; float: left;">FACT 2:</span>
+              <br />
+              <span style="font-size: 1vw;">XXXTENTACION came into the game with negative energy.</span>
+            </p>
+            <br />
+            <br />
+            <br />
+            <p>
+              <span style="font-size: 5vw; float: left;">FACT 3:</span>
+              <br />
+              <span style="font-size: 1vw;">XXXTENTACION came into the game with negative energy.</span>
             </p>
             <br />
             <!-- <p>
@@ -99,7 +109,7 @@
                 </iframe>
               </div>
               <p>"I'm like girl, do you have plans?"</p>
-              <iframe
+              <!-- <iframe
                 width="100%" 
                 height="166" 
                 scrolling="no" 
@@ -118,7 +128,7 @@
                 target="_blank" 
                 style="color: #cccccc; text-decoration: none;">
                 </a>
-              </div>
+              </div> -->
               <br />  
             <div class="bottom">
               <a href="#!" onclick="toggle('Kiss On Me', 'kiss-on-me' )">Lyrics</a>
@@ -1050,7 +1060,7 @@
               </div>
               <br />  
               <div class="bottom">
-                <a href="#!" onclick="toggle('RAD!', 'sadrad' )">Lyrics</a>
+                <a href="#!" onclick="toggle('RAD!', 'sadrad', 'radSCLD')">Lyrics</a>
                   <span class="date">March 5, 2018</span>
                 </div>
             </section> 
@@ -1176,7 +1186,7 @@
           </div>
           <div>
             <iframe
-            name="soundcloud"
+            class="soundcloud"
             width="100%" 
             height="166" 
             scrolling="no" 
@@ -1219,11 +1229,9 @@
         if( song_name ) {
           $('#popup').attr('data-song', song_name);
         }
-        if( url ) {
-          $('#soundcloud').attr('src', url);
-          console.log("hey")
-          console.log(url)
-        };
+        if ( url === "sunlightSCLD" ) {
+          $('.soundcloud').attr("src", "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422068119&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true");
+        }
       $('#popup,#blur').addClass('active');
       $('.after').css('background-size', $('.compare').width());
       return false;
