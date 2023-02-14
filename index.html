@@ -9,12 +9,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
   </head>
   <body>
+    <script type="module">
+      import { rainbowCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+      new rainbowCursor();
+    </script>
     <br />
-    <div>
+    <script src="js/three.js"></script>
+		<script>
+			const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+      const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+      const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+      const cube = new THREE.Mesh( geometry, material );
+      scene.add( cube );
+
+      camera.position.z = 5;
+
+      const renderer = new THREE.WebGLRenderer();
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      document.body.appendChild( renderer.domElement );
+
+      function animate() {
+        requestAnimationFrame( animate );
+        renderer.render( scene, camera );
+        cube.rotation.x += 0.01;
+			  cube.rotation.y += 0.01;
+      }
+      animate();
+      
+		</script>
+    <!-- <div>
       <img src="https://i.ibb.co/PTxtShP/XXXSENSATION.jpg" style="display:block; text-align:center; margin:10px auto 20px; max-width: 100%; height: auto;" />
-    </div>
+    </div> -->
     <div class="navbar">
       <input 
       type="button" 
@@ -35,7 +64,7 @@
       <div style="background:yellow; display:inline-block; margin-left: auto; margin-right: auto; width: 80%;" id="explanation">
         <br />
         <h1 style="font-size: 7vw;">
-          XXXSENSATION
+          Welcome To My Page :)
         </h1>
           <div style="margin-left: auto; margin-right: auto; width: 90%;">
             <br />
@@ -43,19 +72,34 @@
               <span style="font-size: 3vw; font-weight: bold; display: inline-block; vertical-align: middle;">
                 The Official Home of 
                <br />
-                The Best Rap Parody of All time
+                XXXSENSATION
               </span>
               <br />
               <br />
-              <span style="font-size: 1vw; font-style: italic; display: inline-block; vertical-align: middle;">2,000,000+ Streams Worldwide</span>
+              <span style="font-size: 1vw; font-style: italic; display: inline-block; vertical-align: middle;">2,000,000+ Streams Worldwide, Wow!</span>
               <br style="line-height: 150%;" />
               <br style="line-height: 150%;" />
-              <span style="font-size: 1.5vw; width: 60%;">
-                XXXTENTACION was arguably the most polarizing artist of his generation. The music he made was undoubtable, he received accolades from Kanye, Kendrick, and many of his contemporaries. Yet the negativity he entered the game with, born from a rough home life and upbringing, was also undoubtable. XXXSENSATION arose from recognizing the good in XXXTENTACION, rewriting his lyrics from negative, violent anthems to positive, loving anthems. 
-              </span>
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4Wv7dAochHCJFUcbdm947v?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <span style="font-size: 1.75vw; width: 60%;">
+                Hi there! My name is Declan, and in February 2017 I created a parody of a rapper, XXXTENTACION, and called the project XXXSENSATION.
+                <br />
+                <br />
+                For those unacquainted, XXXTENTACION (Jahseh Onfroy, 1998-2018) was arguably the most polarizing artist of his generation. The music he made was creatively diverse and undoubtable. Yet the negativity he entered the game with, born from a rough home life and upbringing, was also undoubtable. Allegations of sexual assault, domestic kidnapping, and attempted murder surrounded the young rapper as he rose in the ranks, being donned the unofficial king of "Soundcloud Rap," and ultimately becoming an internationally recognized hero to many young fans.
+                <br />
+                <br />
+                The XXXSENSATION project began in February 17, 2017 and ran through March 29, 2018. 
+                Jahseh Onfroy was shot and killed during a robbery on June 18, 2018. He was 20 years old.
+                <br />
+                <br />
+              </span>   
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4Wv7dAochHCJFUcbdm947v?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <br />
+                <br />
+                <span style="font-size: 1.75vw; width: 60%;">
+                During these 13 months, the project was both applauded by XXXTENTACION, then blocked and then unblocked by XXXTENTACION. As these interactions happened, I watched as XXXTENTACION's music, outlook, and behavior began to change in a positive way. He began emulating direct aspects of the XXXSENSATION persona, and had he not been tragically taken from us, I believe he would have continued that transformation—fully negating the need for XXXSENSATION to exist as a parody.
+                <br />
+                <br />
+                The XXXSENSATION project and persona rose from recognizing the potential in XXXTENTACION's mind and music, while criticizing the violence and misogny his brand(#BadVibesForever) respresented. My goal was to provide a counterpoint to that darkness, transforming his songs from negative, violent confrontations to positive, loving anthems. This website is the untold story of this project, as told by me, Declan (fka XXXSENSATION), about how his music changed my life and how my (remaking his) music changed his. 
               <br />
-        
               </span>
             </p>
             <br />
@@ -77,52 +121,104 @@
             <br />
             <p>
               <span style="font-size: 5vw; font-weight: bold; display: inline-block; vertical-align: middle;">1. PARODY</span>
-              <span style="font-size: 1vw; font-style: italic; display: inline-block; vertical-align: middle;">"an imitation of the style of a particular writer, artist, or genre with deliberate exaggeration for comic effect."</span>
+              <br />
+              <span style="font-size: 1vw; font-style: italic; display: inline-block; vertical-align: middle;">"an imitation of the style of a particular writer, artist, <br /> or genre with deliberate exaggeration for comic effect."</span>
               <br style="line-height: 150%;" />
               <br style="line-height: 150%;" />
               <span style="font-size: 2vw; ">IT ALL STARTED WITH A TWEET: </span>
               <br style="line-height: 150%;" />
               <blockquote class="twitter-tweet tw-align-center width: 100vw"><p lang="en" dir="ltr">starting a new rapper persona<br>where i am a peace loving hippie<br>who is overtly respectful to women <br><br>calling it <a href="https://twitter.com/hashtag/XXXSENSATION?src=hash&amp;ref_src=twsrc%5Etfw">#XXXSENSATION</a></p>&mdash; 𝕕 a 𝕖 c 𝕝 a 𝕟 (@daeclan) <a href="https://twitter.com/daeclan/status/832028561317965825?ref_src=twsrc%5Etfw">February 16, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               <br style="line-height: 150%;" />
-              <span style="font-size: 1.5vw; ">The first time I heard about XXXTENTACION, he was already embroiled in a feud with Drake over <a target="_blank" and rel="noopener noreferrer" href="https://www.xxlmag.com/xxxtentacion-seems-to-respond-to-new-drake-interview/">the flow Drake was using</a> on a new track called "KMT". It was clear that Drake was doing what Drake had done many times before—<a target="_blank" and rel="noopener noreferrer" href="https://www.youtube.com/watch?v=fv-OviJQKT4">recycling another rising artist's flow</a> to keep himself relevant and on the cutting edge. Drake's delivery on "KMT" was 100% bitten from XXXTENTACION's hit at the time, "Look At Me," yet Drake denied being aware of XXXTENTACION's track, which had been released in 2015 and garnered millions of plays by the Drake's song leaked in 2017. 
-              <br />
-              Being aware of the general hip-hop climate, and with tongue squarely in cheek, I bit XXXTENTACION's flow 
+              <span style="font-size: 1.75vw; ">When I first the word "XXXTENTACION" in late January 2017, it was because <a href="https://www.youtube.com/watch?v=f22AK8OegpM">he had accused Drake of stealing his flow</a>. Drake has been known to bite flows of up and coming rappers, so as a meta-parody of the rap game, I thought it’d be funny to intentionally steal X’s flow from Look At Me! (the very same flow he accused Drake of stealing), and rewrite the song to be positive and kind to women. XXXSENSATION was born in direct response to the negative, violent, and misogynistic bars in XXXTENTACION’s song.
+                <br />
+                <br />
+                A week later, the song had 10k plays. Within a month, 100k. Aware I had touched on something culturally significant, I decided to keep making more of XXXTENTACION’s songs, releasing a new parody every week.
               </span>
             </p>
             <br />
             <p>
               <span style="font-size: 5vw; font-weight: bold; display: inline-block; vertical-align: middle;">2. SATIRE</span>
               <br />
-              <span style="font-size: 1vw; font-style: italic; display: inline-block; vertical-align: middle;">"the use of humor, irony, exaggeration, or ridicule to expose and criticize people's stupidity or vices, particularly in the context of contemporary politics and other topical issues."</span>
+              <span style="font-size: 1vw; font-style: italic; display: inline-block; vertical-align: middle;">"the use of humor, irony, exaggeration, or ridicule to expose and criticize <br /> people's stupidity or vices, particularly in the context of contemporary <br /> politics and other topical issues."</span>
               <br style="line-height: 150%;" />
               <br style="line-height: 150%;" />
-              <span style="font-size: 2vw; ">XXXSENSATION ENTERED THE GAME AS A <br />POSITIVE COUNTERPOINT TO THAT NEGATIVITY</span>
+              <span style="font-size: 2vw; ">XXXTENTACION GOT THE JOKE,<br /> CALLED THE PROJECT "HILARIOUS" <br /> IN MARCH 2017</span>
               <br />
-              <span style="font-size: 1.5vw; ">
-                <a target="_blank" and rel="noopener noreferrer" href="https://www.youtube.com/watch?v=fv-OviJQKT4">recycling another rising artist's flow</a> 
-                <a target="_blank" and rel="noopener noreferrer" href="https://twitter.com/THEXXXSENSATION/status/847836748017278976?s=20&t=jBPfZY9odGcRdX4kQzmm6A">Donating to Women's Rights.</a> 
-                <a target="_blank" and rel="noopener noreferrer" href="https://twitter.com/BreaktheCycleDV/status/908375295069212673?s=20&t=jBPfZY9odGcRdX4kQzmm6A"> Volunteering.</a>
+              <br />
+              <img src="https://pbs.twimg.com/media/C_4Q1myVwAA5lEU?format=jpg&name=large" style="height:50vw; width:30vw" />
+              <br style="line-height: 150%;" />
+              <br style="line-height: 150%;" />
+              <span style="font-size: 1.75vw; ">The goal of the first parody was to make people laugh, but the project quickly got more serious, becoming an outlet to directly criticize the type of violent, misogynistic
+                
+                darkness and violence that X was leading with. As the project grew in scope, many fans were divided—was XXXSENSATION a fan project, or was it making fun of XXXTENTACION? Where did the joke end and the commentary begin? With that confusion arising, the lyrics and songs I rewrote got progressively more targeted and critical of his behavior.
+                <br />
+                <br />
+                While I respected the lyrical dexterity and clear talent that X had, the XXXSENSATION project created in protest of his ascension, not despite but because of his violent persona. The project worked as a satirical examination of his bad-boy character through the recomposition of his works, removing the negativity and darkness and replacing them with positivity and brightness. It was clear XXXTENTACION was rapidly ascending the public consciousness by the people speaking out about his music (namely Kanye and Kendrick), but my project was more about the exposing and playing with the “kayfabe” of rap; the artistic choices that rappers make to define and promote a persona.
+                <br />
               </span>
-             
-              <blockquote class="twitter-tweet tw-align-center width: 100vw !important;"><p lang="en" dir="ltr">NEW TRACK<a href="https://twitter.com/hashtag/IGOTPLENTYTIMETOVOLUNTEER?src=hash&amp;ref_src=twsrc%5Etfw">#IGOTPLENTYTIMETOVOLUNTEER</a><br>OUT NOW<br><br>stream here:<a href="https://t.co/WSSlPCXD30">https://t.co/WSSlPCXD30</a> <a href="https://t.co/p7s2fdb8J1">pic.twitter.com/p7s2fdb8J1</a></p>&mdash; XXXSENSATION - XXX (@THEXXXSENSATION) <a href="https://twitter.com/THEXXXSENSATION/status/847978434341031936?ref_src=twsrc%5Etfw">April 1, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              <br />
-              <span style="font-size: 1.25vw; font-weight: bold;">#GOODVIBESFOREVER</span>
             </p>
             <br />
             <p>
               <span style="font-size: 5vw; font-weight: bold; display: inline-block; vertical-align: middle;">3. A MIRROR</span>
               <br />
-              <span style="font-size: 2vw; ">XXXTENTACION ACKNOWLEDGED XXXSENSATION & <br /> FOUND THE WORK "HILARIOUS" IN MARCH 2017</span>
+              <span style="font-size: 1vw; font-style: italic; display: inline-block; vertical-align: middle;">"...a wave reflector. Light consists of waves, and when light waves reflect from the flat surface of a mirror, those waves retain the same degree of curvature and vergence, in an equal yet opposite direction, as the original waves. "</span>
+              <br style="line-height: 150%;" />
+              <br style="line-height: 150%;" />
+              <blockquote class="twitter-tweet tw-align-center width: 100vw"><p lang="en" dir="ltr">time to make them hate us some more.</p>&mdash; MAKE OUT HILL - XXX (@xxxtentacion) <a href="https://twitter.com/xxxtentacion/status/847272093104316417?ref_src=twsrc%5Etfw">March 30, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <blockquote class="twitter-tweet tw-align-center width: 100vw"><p lang="en" dir="ltr">time to make them love us some more.</p>&mdash; XXXSENSATION - XXX (@THEXXXSENSATION) <a href="https://twitter.com/THEXXXSENSATION/status/847294783374540800?ref_src=twsrc%5Etfw">March 30, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <br style="line-height: 150%;" />
+              <span style="font-size: 1vw; font-style: italic; display: inline-block; vertical-align: middle;">
+                Donald Trump's in office, we lost Barack  <br />
+                And promised to never doubt him again <br />
+                But is America honest or do we bask in sin? <br />
+                Pass the gin, I mix it with American blood <br />
+                Then bash him in, you crippin' or you married to blood? <br />
+                I'll ask again—oops—accident <br />
+                It's nasty when you set us up <br />
+                Then roll the dice, then bet us up <br />
+                You overnight the big rifles, then tell Fox to be scared of us <br />
+                Gang members or terrorists, et cetera, et cetera <br />
+                Americas reflections of me <br />
+                That's what a mirror does <br />
+                <br />
+                —Kendrick Lamar, "XXX" (2017)
+              </span>
               <br />
               <br />
-              <img src="https://pbs.twimg.com/media/C_4Q1myVwAA5lEU?format=jpg&name=large" style="height:50vw; width:30vw" />
+              <span style="font-size: 1.75vw; ">The context of the culture at this particular time is important to understanding the nature of this project. Trump had just been inaugurated as the 45th president of the United States of America. It felt like America itself had become a parody, or a dismal episode of a Reality TV show. Rap music was in a strange place, with the racial unease and general darkness looming a lot of heads turned to rappers preaching positivity as a different approach to the violent, gang-affiliated trap music that was coming out of Atlanta (e.g., Future, Migos, Young Thug).
+                <br />
+                <br />
+                XXXSENSATION recognized this yearning for something uplifting, but it was important that it still sounded dope. There were rappers who were trying to be that positive voice, but they ended up sounding unintentionally corny (looking at you Kyle & Lil Yachty). The only rapper who seemed to do this authentically was Lil B, but the world wasn't ready for that yet. Instead, the zeitgeist was focused on trap music—specifically triplet flows about whipping up dope coming out of Atlanta.
+                <br />
+                <br />
+                In real life (irl) there was Jahseh Onfroy, a black teenager from Plantation, FL and there was me, Declan Murphy, a white dude in his mid-20’s from Bar Harbor, ME. Two men from the East Coast of America, one from pretty much as South as you can get and one from pretty much as North as you can get. Each about 100 miles from their respective border, whether that be Canada or the Florida Keys. 
+                <br />
+                <br />
+                On the internet, though, we could be heroes or villains. XXXTENTACION & XXXSENSATION. Yin & yang. This spoke to our backgrounds. Where we were born, what our homelives were like. Our nature & our nurture.
+                <br />                
+              </span>
             </p>
             <br />
             <p>
               <span style="font-size: 5vw; font-weight: bold; display: inline-block; vertical-align: middle;">4. RAP HISTORY</span>
               <br />
-              <span style="font-size: 2vw; ">XXXTENTACION STARTED MOVING TOWARDS POSITIVITY THEREAFTER, ADOPTING THE XXXSENSATION PLAYBOOK</span>
+              <span style="font-size: 1vw; font-style: italic; display: inline-block; vertical-align: middle;">"the whole series of past events connected with someone or something."</span>
               <br />
+              <br />
+              <span style="font-size: 1.33vw; ">This is an ethnographic account of two male American rap legends from the East Coast.
+                <br />
+                <br />
+                Ayo fr the headlines will have you think one way
+                <br />
+                <br />
+                The die hards will tell you another thing
+                <br />
+                <br />
+                What really happened is only known to those involved, who witnessed it.
+
+                I was there, every week, following every move. I watched as the court cases unfolded, I watched as the prison phone calls leaked, I showed up to his show in Chicago. 
+                <br />                
+              </span>
               <span style="font-size: 1.5vw; "><a target="_blank" and rel="noopener noreferrer" href="https://genius.com/Xxxtentacion-proudcatowner-ihaterappers-ieatpussy-lyrics">Kitty Cat Song. </a><a target="_blank" and rel="noopener noreferrer" href="https://www.complex.com/music/2018/04/6-months-later-zero-proof-xxxtentacion-100k-donation-domestic-violence-prevention#:~:text=Last%20year%2C%20on%20October%2020,of%20big%20announcements%20and%20controversies.">Women's Rights Donation Pledge. </a><a target="_blank" and rel="noopener noreferrer" href="https://www.youtube.com/watch?v=K3WWXyCtI7Y">Volunteering For The Kids.</a></span>
             </p>
             <br />
@@ -624,7 +720,9 @@
                   allowfullscreen>
               </iframe>
               </div>
-              <p>"Trying to feel like I tapped into divine, trying to feel like I mapped out the sunshine,"</p> 
+              <p>"Trying to feel like I tapped into divine, trying to feel like I mapped out the sunshine"</p> 
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7BMTikMbc9MiKkQABppJGU?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <br />
               <div class="bottom">
                 <a href="#!" onclick="toggle('Everyone Is A Hero In Their Dreams', 'heroic', 'heroSCLD' )">Lyrics</a>
                   <span class="date">September 25, 2017</span>
@@ -649,6 +747,8 @@
               </iframe>
               </div>
               <p>"I will not declaw their nails, got love from nose to tail"</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3v2FmQ5yOngq4FPLhKl9UY?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <br />
               <div class="bottom">
                 <a href="#!" onclick="toggle('#PROUDCATDEFENDER #ILOVERAPPERS #IEATSUSHI', 'sushi', 'catDefenseSCLD' )">Lyrics</a>
                 <span class="date">January 17, 2018</span>
@@ -662,7 +762,7 @@
                   <span class="title">27 Album drops</span>
                 </div> 
                 <div>
-                  <iframe
+                  <!-- <iframe
                     width="100%" 
                     height="300" 
                     scrolling="no" 
@@ -681,13 +781,15 @@
                       target="_blank" 
                       style="color: #cccccc; text-decoration: none;">
                     </a>
-                  </div>
+                  </div> -->
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3i3CoZz09gNlPoGUY31vBr?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
                 <p>The Second XXXSENSATION album experience</p>
                 <br />
                 <div class="bottom">
                   <a href="#!">Lyrics</a>
-                  <span class="date">January 29, 2018</span>
+                  <span class="date" style="margin-left: auto; 
+                  margin-right: 0;">January 29, 2018</span>
                 </div>
             </section> 
           </div>
@@ -709,6 +811,8 @@
               </iframe>
               </div>
               <p>"Women’s Rights is the way I always cast my vote"</p>  
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/48Bf8lv4805g0cmlzbTuxy?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <br />
               <div class="bottom">
                 <a href="#!" onclick="toggle('RAD!', 'sadrad', 'radSCLD')">Lyrics</a>
                   <span class="date">March 5, 2018</span>
@@ -733,6 +837,8 @@
               </iframe>
               </div>
               <p>"Kitty's meow meow in the sunlight, put them in the basket of my yung bike"</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0KzTfCF50bvVcTnrQ7GPpF?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <br />
               <div class="bottom">
                 <a href="#!" onclick="toggle('Sunlight', 'sunmoon', 'sunlightSCLD')">Lyrics</a>
                 <span class="date">March 29, 2018</span>
@@ -979,7 +1085,7 @@
       function close_popup() {
         $('#popup,#blur').removeClass('active');
         return false;
-      }
+      } 
 	  </script>
   </body>
 </html>
