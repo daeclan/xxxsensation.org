@@ -10,21 +10,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <script src="js/three.js"></script>
   </head>
   <body>
     <script type="module">
       import { rainbowCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+      import MTLLoader from 'three-mtl-loader';
       new rainbowCursor();
     </script>
     <br />
-    <script src="js/three.js"></script>
+    <script type="module">
+      
+    </script>
 		<script>
 			const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
       const geometry = new THREE.BoxGeometry( 1, 1, 1 );
       const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
       const cube = new THREE.Mesh( geometry, material );
+      var xxx 
       scene.add( cube );
+
+      var light = new THREE.PointLight(0xFFFFFF, 1.4, 1000)
+        light.position.set(0,15,15);
+        scene.add(light);
+
+      var light2 = new THREE.SpotLight(0xFFFFFF, 0.75, 5)
+        light.position.set(0,3000,35);
+        scene.add(light2);
+
+        var mtlLoader = new THREE.MTLLoader();
+        mtlLoader.load('models/material.lib', function (materials) {
+
+            materials.preload();
+
+            // Load the object
+            var objLoader = new THREE.OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.load('models/xxx.obj', function (object) {
+                scene.add(object);
+                xxx = object;
+                object.position.z -= 370;
+                object.rotation.x = 250;
+
+            });
+        });
+
+      // const loader = new GLTFLoader();
+
+      // loader.load(
+      //   // resource URL
+      //   'models/xxx.gltf',
+      //   // called when the resource is loaded
+      //   function ( gltf ) {
+
+      //     scene.add( gltf.scene );
+
+      //     gltf.animations; // Array<THREE.AnimationClip>
+      //     gltf.scene; // THREE.Group
+      //     gltf.scenes; // Array<THREE.Group>
+      //     gltf.cameras; // Array<THREE.Camera>
+      //     gltf.asset; // Object
+
+      //   },
+      //   // called while loading is progressing
+      //   function ( xhr ) {
+
+      //     console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+
+      //   },
+      //   // called when loading has errors
+      //   function ( error ) {
+
+      //     console.log( 'An error happened' );
+
+      //   }
+      // );
 
       camera.position.z = 5;
 
