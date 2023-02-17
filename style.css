@@ -330,33 +330,33 @@ h2 {
 }
 
 .compare2 {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-grow: 1;
-  width: 50%;
+  width: 100%;
   height: 0;
   padding-top: 100%;
   border: 1px solid #f5f5f5;
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
 }
 
-.compare2 .before {
+.compare2 .before2 {
   position: absolute;
   top: 0px;
   left: 0;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   background: #000 center/cover no-repeat;
   background-position: top left;
   z-index: 3;
 }
 
-.compare2 .before .after {
+.compare2 .before2 .after2 {
   position: absolute;
   background: #000 center/cover no-repeat;
   z-index: 1;
   background-position: top left;
-  height: 50%;
+  height: 100%;
   top: 0;
   left: 0;
 }
